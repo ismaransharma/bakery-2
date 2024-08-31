@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --font: #252525;
+  --topHeader: #da384a;
+  --navBar: #f1f1f1;
+}
+
+li.active a {
+  color: var(--topHeader) !important;
+}
+/* Top Header Css Starts Here */
+
+#topHeader {
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--topHeader);
+  color: #fff;
+}
+
+#topHeader .left h3 {
+  font-size: 2rem;
+}
+
+#topHeader .col-md-6.right a,
+#topHeader .col-md-6.right span {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* Top Header Css Ends Here */
+
+/* Navbar Css Starts Here */
+#navBar {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--navBar);
+  position: sticky;
+  top: 0;
+}
+
+#navBar a.navbar-brand {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+#navBar ul li {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 0 12rem;
+}
+
+#navBar ul li a {
+  color: var(--font);
+}
+/* Navbar Css Ends Here */
+
+/* Hero Section Css Starts Here */
+#heroSection {
+  height: 80vh;
+  width: 100%;
+  background: url("images/heroSection.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#heroSection .container {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heroSection .cnct h2 {
+  font-size: 6rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#heroSection .cnct h3 {
+  font-size: 2.6rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+/* Hero Section Css Ends Here */
+
+/* We Bake Section Css Starts Here */
+#weBake {
+  height: auto;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+#weBake .left .title h2 {
+  font-size: 3rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+
+#weBake .left .parag p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+/* We Bake Section Css Ends Here */
+
+/* Our Menus Section Css Starts Here */
+#ourMenus {
+  height: auto;
+}
+
+#ourMenus .title h2 {
+  font-size: 6rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+
+#ourMenus .cnct a {
+  text-decoration: none;
+  color: #252525;
+}
+
+#ourMenus .cnct .box {
+  height: 100%;
+  width: 70%;
+  border: none;
+  border-radius: 0.6rem;
+  transition: 0.3s ease-in-out;
+  /* background-color: red; */
+}
+
+#ourMenus .cnct .box:hover {
+  box-shadow: 0.1rem 0.1rem 0.6rem #d1d1d1;
+}
+
+#ourMenus .cnct .box .image {
+  height: 75%;
+  width: 100%;
+  border: none;
+  border-radius: 0.6rem 0.6rem 0 0;
+  overflow: hidden;
+}
+
+#ourMenus .cnct .box .image img {
+  height: 100%;
+  width: 30rem;
+  object-fit: cover;
+}
+
+#ourMenus .cnct .box .texts {
+  margin: 2rem 0;
+}
+
+#ourMenus .cnct .box .texts h4 {
+  font-size: 3rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+
+#ourMenus .cnct .box .texts h5 {
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+
+/* Our Menus Section Css Ends Here */
+
+/* Gallery Section Css Starts Here */
+#gallery {
+  height: auto;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+#gallery .title h2 {
+  font-size: 4rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+}
+
+/* Gallery Section Css Ends Here */
+
+/* Map Section Css Starts Here */
+#map {
+  height: auto;
+  margin: 2rem 0;
+}
+
+#map iframe {
+  height: 50rem;
+  width: 100%;
+}
+/* Map Section Css Ends Here */
+
+/* Our Chef Section Css Starts Here */
+#ourChef {
+  height: auto;
+  background: url("images/ourChef.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+#ourChef .title h2 {
+  font-size: 6rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+#ourChef .cnct {
+  margin: 25rem 0;
+}
+
+#ourChef .cnct .box {
+  height: 40rem;
+  width: 36rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #252525;
+}
+
+#ourChef .cnct .box .circleImage {
+  height: 19rem;
+  width: 19rem;
+  border-radius: 50%;
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+#ourChef .cnct .box .circleImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#ourChef .cnct .box .chefInfo h3 {
+  color: #da384a;
+  font-size: 2.2rem;
+}
+
+#ourChef .cnct .box .chefInfo h4 {
+  font-size: 2.6rem;
+  color: #252525;
+}
+/* Our Chef Section Css Ends Here */
+
+/* Contact Us Section Css Starts Here */
+#contactUs {
+  height: auto;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+#contactUs .title h2 {
+  font-size: 5rem;
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+}
+
+#contactUs .title h4 {
+  font-size: 1.8rem;
+}
+
+#contactUs .cnct .col-md-3 {
+  margin: 1rem 0;
+}
+
+#contactUs .cnct .col-md-3 svg,
+#contactUs .cnct .col-md-3 span {
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+}
+/* Contact Us Section Css Ends Here */
+
+/* Footer Section Css Starts Here */
+#footer {
+  height: 30.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5rem 0;
+  background-color: var(--font);
+  color: #fff;
+}
+
+#footer .left h2 {
+  font-size: 4rem;
+}
+
+#footer .left h4 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+#footer .right .bjg h4 {
+  font-size: 2rem;
+}
+
+#footer .right .cnct .circle {
+  height: 5rem;
+  width: 5rem;
+  border: none;
+  border-radius: 50%;
+  margin: 2rem 1rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  cursor: pointer;
+}
+
+#footer .right .cnct .circle:hover {
+  background: transparent;
+  filter: drop-shadow(0.1rem 0.1rem var(--topHeader));
+}
+
+#footer .lower {
+  margin: 2rem 0;
+}
+
+#footer .lower h3 {
+  font-size: 2.4rem;
+}
+/* Footer Section Css Ends Here */
